@@ -16,7 +16,7 @@ def main():
 
     logBroke = breakLog(logDump)
 
-    print(logBroke.strCPU_INFO)
+#    print(logBroke.strCPU_INFO)
 
     sluggingData = analyzeSlugging(logBroke)
 

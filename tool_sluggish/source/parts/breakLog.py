@@ -13,10 +13,13 @@ class breakLog:
         self.strSYSTEM_LOG = ""
         self.strSYSTEM_PROPERTIES = ""
 
+        self.strCPU_INFO = ""
+
         self.strMEMORY_INFO = ""
         self.strDUMPSYS_MEMINFO = ""
 
-        self.strCPU_INFO = ""
+
+
 
 
         self.strDUMPSYS_BATTERY = ""
