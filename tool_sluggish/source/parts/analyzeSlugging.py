@@ -15,6 +15,13 @@ class analyzeSlugging:
         self.counter_low_memory_killer = ""
         self.lines_low_memory_killer = ""
 
+        self.log_cat_V = ""
+        self.log_cat_D = ""
+        self.log_cat_I = ""
+        self.log_cat_W = ""
+        self.log_cat_E = ""
+        self.log_cat_A = ""
+
         # Slugging Analysis Actions
 #        self.countSluggingParameters(brokeLog.strSYSTEM_LOG,brokeLog.strEVENT_LOG)
 #        self.explore_CPU(brokeLog.strCPU_INFO)
@@ -49,21 +56,51 @@ class analyzeSlugging:
         vet_SYSTEM_LOG = SYSTEM_LOG.splitlines()
 
         list_event_types = list()
-        line_AUX = ""
-        idexP = 0
         i = 0
 
-        # Coleta Eventos
         for line in vet_SYSTEM_LOG:
-            print(line)
-            line_AUX = line[39:]
+            line_AUX = line[37:]
             line_AUX = line_AUX[:line_AUX.find(':')]
 
             if line_AUX not in list_event_types:
                 list_event_types.append(line_AUX)
-                #            print(line_AUX)
 
-        i = i + 1
+            i = i + 1
+
+        list_event_types.sort()
+
+        for x in list_event_types:
+            print(x)
+
+        print(i)
+
+
+
+        # Separar por Tipos de Eventos = V,D,I,W,E,A
+#        for line in vet_SYSTEM_LOG:
+#            print(line)
+#            line_AUX = line[37:38]
+#            line_AUX = line_AUX[:line_AUX.find(':')]
+#            print(line_AUX)
+#            if line_AUX == "V":
+#                self.log_cat_V = self.log_cat_V + line + "\n";
+#            elif line_AUX =="D":
+#                self.log_cat_D = self.log_cat_D + line + "\n";
+#            elif line_AUX == "I":
+#                self.log_cat_I = self.log_cat_I + line + "\n";
+#            elif line_AUX == "W":
+#                self.log_cat_W = self.log_cat_W + line + "\n";
+#            elif line_AUX == "E":
+#                self.log_cat_E = self.log_cat_E + line + "\n";
+#            elif line_AUX == "A":
+#                self.log_cat_A = self.log_cat_A + line + "\n";
+
+#        print("I")
+#        print(self.log_cat_I)
+#        print("V")
+#        print(self.log_cat_V)
+#        print("D")
+#        print(self.log_cat_D)
 
             # Orena Lista
 #            list_event_types.sort()
@@ -72,7 +109,6 @@ class analyzeSlugging:
 #            for x in list_event_types:
 #                print(x)
 
-        print(i)
 
     def explore_EVENT_LOG(self, EVENT_LOG):
         print(" Method: explore_EVENT_LOG")
@@ -85,21 +121,25 @@ class analyzeSlugging:
 
         # Coleta Eventos
         for line in vet_EVENT_LOG:
+            print(line)
             line_AUX = line[39:]
             line_AUX = line_AUX[:line_AUX.find(':')]
 
             if line_AUX not in list_event_types:
                 list_event_types.append(line_AUX)
+
+#            if line_AUX == "cpu":
+#                print(line)
 #            print(line_AUX)
 
             i = i + 1
 
-        # Orena Lista
+        # Ordena Lista
         list_event_types.sort()
 
         # Imprime Lista
-        for x in list_event_types:
-            print(x)
+#        for x in list_event_types:
+#            print(x)
 
         print(i)
 

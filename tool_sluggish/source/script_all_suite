@@ -1,0 +1,15 @@
+#!/bin/bash
+./main.py ../../benchmarks_dumpStates/dumpState_1559075577206.log
+./main.py ../../benchmarks_dumpStates/dumpState_A920FXXU1BSC5_201905231427.log
+./main.py ../../benchmarks_dumpStates/dumpState_J410GUBU1ASE5_201905241059.log
+./main.py ../../benchmarks_dumpStates/dumpState_T515XXU1ASEB_201905271123.log
+./main.py ../../benchmarks_dumpStates/dumpState_1560214092472.log
+./main.py ../../benchmarks_dumpStates/dumpState_A920FXXU1BSF5_201906061743.log
+./main.py ../../benchmarks_dumpStates/dumpState_J600GUBU3BSC4_201903181526.log
+./main.py ../../benchmarks_dumpStates/dumpState_A920FXXU1BSC5_201905131044.log
+./main.py ../../benchmarks_dumpStates/dumpState_G950FXXU4DSDA_201905211514.log
+./main.py ../../benchmarks_dumpStates/dumpState_J610GUBE1BSC2_201903141449.log
+./main.py ../../benchmarks_dumpStates/dumpState_A920FXXU1BSC5_201905131325.log
+./main.py ../../benchmarks_dumpStates/dumpState_G950FXXU4DSDA_201905211518.log
+./main.py ../../benchmarks_dumpStates/dumpState_J610GUBU1ARIQ_201905221640.log
+

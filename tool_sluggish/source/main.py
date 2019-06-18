@@ -7,18 +7,21 @@ from parts.breakLog import breakLog
 
 def main():
 
+    # Get Parameter
     strDump = sys.argv[1]
-    print(strDump)
 
+    # Open File Log
     file = open(strDump,"rb")
     logDump = file.read()
     file.close()
 
+    # Segment parts of the log
     logBroke = breakLog(logDump)
 
-#    print(logBroke.strCPU_INFO)
 
     sluggingData = analyzeSlugging(logBroke)
+
+
 
 #    print("\n")
 #    print("Garbage Collector:")

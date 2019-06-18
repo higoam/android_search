@@ -1,0 +1,10 @@
+
+	Slugging - Analisando Logs
+	
+		> Links de Estudos
+			http://gityuan.com/2016/05/15/event-log/
+			http://mobilerndhub.sec.samsung.net/wiki/display/SIDIAAPPTG/How+to+analyse+a+sluggish+issue
+		
+		> 
+		
+		

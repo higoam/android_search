@@ -1,0 +1,9 @@
+
+
+	Itens básicos sobre Android - Uteis para System 
+	
+		> Modos de Telas Android
+		
+			Modo Download
+			
+			Modo UpLoad

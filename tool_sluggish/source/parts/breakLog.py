@@ -19,9 +19,6 @@ class breakLog:
         self.strDUMPSYS_MEMINFO = ""
 
 
-
-
-
         self.strDUMPSYS_BATTERY = ""
         self.strDUMPSYS_WIFI = ""
 
@@ -35,6 +32,7 @@ class breakLog:
 
 
         self.segmentImportantSections(logText)
+#        self.updateEventTypes()
 
 
 
@@ -138,3 +136,66 @@ class breakLog:
         self.strDUMPSYS_MEMINFO = STR_DUMPSYS_MEMINFO
         self.strMEMORY_INFO = STR_MEMORY_INFO
         self.strCPU_INFO = STR_CPU_INFO_AUX
+
+
+
+
+# ------------------------------------------------------------------------|
+# ------------------------------------------------------------------------|
+# ------------------------------------------------------------------------|
+    def updateEventTypes(self):
+        print(" Method: updateEventTypes")
+
+        list_file = list()
+        list_log = list()
+        new_list = list()
+
+        # Read file Type Events
+        file_types_events = open("../data/types_of_known_events.txt", "r")
+        types_events = file_types_events.read()
+        file_types_events.close()
+        vet_types_events = types_events.splitlines()
+
+        for line in vet_types_events:
+            new_list.append(line)
+
+
+        # Read Log Type Events
+        vet_stringAux = self.strEVENT_LOG.splitlines()
+        for line in vet_stringAux:
+            line_AUX = line[39:]
+            line_AUX = line_AUX[:line_AUX.find(':')]
+
+            if line_AUX not in new_list:
+                new_list.append(line_AUX)
+
+#        print("FILE")
+#        for x in list_file:
+#            print(x)
+
+#        print("LOG")
+#        for x in list_log:
+#            print(x)
+
+#        for iten in list_log:
+
+
+        new_list.extend(list_file)
+        new_list.extend(list_log)
+
+        print("NEW LIST")
+        for x in new_list:
+            print(x)
+
+        # Get Events of Logs Now
+
+
+
+        # Add two lists
+
+
+
+        # Write new file Type Events
+
+
+

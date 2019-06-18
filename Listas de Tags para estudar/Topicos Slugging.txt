@@ -1,0 +1,10 @@
+
+	Tópicos Slugging
+	
+		> Analisando Logs
+		> Systrace
+		> Trace View
+		> Overdraw Debugger
+		> GPU Rendering Profiling
+		> Hierarchy Viewer
+	
