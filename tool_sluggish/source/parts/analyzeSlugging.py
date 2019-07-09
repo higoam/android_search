@@ -111,6 +111,7 @@ class analyzeSlugging:
 
 
     def explore_EVENT_LOG(self, EVENT_LOG):
+        print("")
         print(" Method: explore_EVENT_LOG")
         vet_EVENT_LOG = EVENT_LOG.splitlines()
 
@@ -121,7 +122,7 @@ class analyzeSlugging:
 
         # Coleta Eventos
         for line in vet_EVENT_LOG:
-            print(line)
+#            print(line)
             line_AUX = line[39:]
             line_AUX = line_AUX[:line_AUX.find(':')]
 
@@ -141,7 +142,7 @@ class analyzeSlugging:
         for x in list_event_types:
             print(x)
 
-        print(i)
+#        print(i)
 
     def countSluggingParameters(self, SYSTEM_LOG,EVENT_LOG):
         vet_SYSTEM_LOG = SYSTEM_LOG.splitlines()
