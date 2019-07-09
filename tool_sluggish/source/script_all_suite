@@ -12,4 +12,5 @@
 ./main.py ../../benchmarks_dumpStates/dumpState_A920FXXU1BSC5_201905131325.log
 ./main.py ../../benchmarks_dumpStates/dumpState_G950FXXU4DSDA_201905211518.log
 ./main.py ../../benchmarks_dumpStates/dumpState_J610GUBU1ARIQ_201905221640.log
-
+./main.py ../../benchmarks_dumpStates/dumpState_J701MUBU6CSF2_201906181615.log
+./main.py ../../benchmarks_dumpStates/dumpState_J701MUBU6CSF2_201906181655.log
