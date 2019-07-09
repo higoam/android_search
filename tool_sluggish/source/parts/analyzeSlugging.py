@@ -138,8 +138,8 @@ class analyzeSlugging:
         list_event_types.sort()
 
         # Imprime Lista
-#        for x in list_event_types:
-#            print(x)
+        for x in list_event_types:
+            print(x)
 
         print(i)
 

@@ -18,6 +18,7 @@ def main():
     # Segment parts of the log
     logBroke = breakLog(logDump)
 
+#    print(logBroke.strSYSTEM_PROPERTIES)
 
     sluggingData = analyzeSlugging(logBroke)
 
