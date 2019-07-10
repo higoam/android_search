@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd9621f3-9ef7-4a4c-b1e2-bc51f6d7c45f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/source/Lista_Type_Event_Log.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/source/parts/analyzeSlugging.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/parts/analyzeSlugging.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/parts/analyzeSlugging.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="113" column="15" selection-start-line="113" selection-start-column="15" selection-end-line="113" selection-end-column="15" />
+            <state relative-caret-position="666">
+              <caret line="177" column="38" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -188,8 +187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/parts/analyzeSlugging.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="113" column="15" selection-start-line="113" selection-start-column="15" selection-end-line="113" selection-end-column="15" />
+        <state relative-caret-position="666">
+          <caret line="177" column="38" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
         </state>
       </provider>
     </entry>

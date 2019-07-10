@@ -111,38 +111,86 @@ class analyzeSlugging:
 
 
     def explore_EVENT_LOG(self, EVENT_LOG):
+
         print("")
         print(" Method: explore_EVENT_LOG")
+
         vet_EVENT_LOG = EVENT_LOG.splitlines()
 
         list_event_types = list()
-        line_AUX =  ""
-        idexP = 0
-        i = 0
+        list_all_events = list()
 
         # Coleta Eventos
         for line in vet_EVENT_LOG:
-#            print(line)
-            line_AUX = line[39:]
-            line_AUX = line_AUX[:line_AUX.find(':')]
 
-            if line_AUX not in list_event_types:
-                list_event_types.append(line_AUX)
+            # Get month
+            STR_AUX = line
+            STR_month = STR_AUX[:2]
 
-#            if line_AUX == "cpu":
-#                print(line)
-#            print(line_AUX)
+            # Get day
+            STR_AUX = STR_AUX[3:]
+            STR_day = STR_AUX[:2]
 
-            i = i + 1
+            # Get hour
+            STR_AUX = STR_AUX[3:]
+            STR_hour = STR_AUX[:2]
 
-        # Ordena Lista
+            # Get minute
+            STR_AUX = STR_AUX[3:]
+            STR_minute = STR_AUX[:2]
+
+            # Get second
+            STR_AUX = STR_AUX[3:]
+            STR_second = STR_AUX[:6]
+
+            # Get PID
+            STR_AUX = STR_AUX[7:]
+            STR_PID = STR_AUX[:5]
+
+            # Get TID
+            STR_AUX = STR_AUX[6:]
+            STR_TID = STR_AUX[:5]
+
+            # Get package
+            STR_AUX = STR_AUX[6:]
+            STR_package = STR_AUX[:5]
+
+            # Get priority
+            STR_AUX = STR_AUX[6:]
+            STR_priority = STR_AUX[:1]
+
+            # Get tag
+            STR_AUX = STR_AUX[2 :]
+            STR_tag = STR_AUX[:STR_AUX.find(':')]
+
+            # Get message
+            STR_AUX = STR_AUX[STR_AUX.find(':')+1:]
+            STR_message = STR_AUX
+
+            #             0         1        2          3           4          5        6          7             8          9         10
+            tuple = (STR_month, STR_day, STR_hour, STR_minute, STR_second, STR_PID, STR_TID, STR_package, STR_priority, STR_tag, STR_message)
+            list_all_events.append(tuple)
+
+            if tuple[9] not in list_event_types:
+                list_event_types.append(tuple[9])
+
+#            print(tuple[9])
+            if tuple[9] == "am_meminfo":
+                print(line)
+
+        # Ordena Tipos de Eventos encontrados
         list_event_types.sort()
 
-        # Imprime Lista
-        for x in list_event_types:
-            print(x)
 
-#        print(i)
+    def consult_EVENT_LOG(self, parameter, value):
+
+        if parameter == "month":
+            print("Buscar por Mes")
+        elif parameter == "day":
+            print("Buscar por Dia")
+
+
+
 
     def countSluggingParameters(self, SYSTEM_LOG,EVENT_LOG):
         vet_SYSTEM_LOG = SYSTEM_LOG.splitlines()
