@@ -3,42 +3,10 @@ from model.log_segment import log_segment
 
 class breakLog:
 
-    def __init__(self):
-        print()
+#    def __init__(self):
+#        print()
         #print("Construct breakLog")
 #        log_input = self.segmentImportantSections(log_input.strREAD_LOG)
-
-
-#        self.logText = log_input.strREAD_LOG
-
-        # Strings to store sections
-#        self.strHEADER_LOG = ""
-
-#        self.strEVENT_LOG = ""
-#        self.strSYSTEM_LOG = ""
-#        self.strSYSTEM_PROPERTIES = ""
-
-#        self.strCPU_INFO = ""
-
-#        self.strMEMORY_INFO = ""
-#        self.strDUMPSYS_MEMINFO = ""
-
-
-#        self.strDUMPSYS_BATTERY = ""
-#        self.strDUMPSYS_WIFI = ""
-
-#        self.strDUMPSYS_ACTIVITY = ""
-#        self.strDUMPSYS_PACKAGE = ""
-#        self.strDUMPSYS_WINDOW = ""
-#        self.strDUMPSYS_POWER = ""
-#        self.strDUMPSYS_NETSTATS = ""
-#        self.strDUMPSYS_AUDIO = ""
-#        self.strDUMPSYS_ALARM = ""
-
-
-
-#        self.updateEventTypes()
-
 
 
 # ------------------------------------------------------------------------|
@@ -55,6 +23,7 @@ class breakLog:
 
         TAG_Collect_MEMORY_INFO = 0
         TAG_Collect_DUMPSYS_MEMINFO = 0
+        TAG_Collect_PROCSTATS = 0
 
         TAG_Collect_CPU_INFO = 0
 
@@ -68,6 +37,7 @@ class breakLog:
 
         STR_MEMORY_INFO = ""
         STR_DUMPSYS_MEMINFO = ""
+        STR_DUMPSYS_PROCSTATS = ""
 
         STR_CPU_INFO_AUX = ""
 
@@ -116,20 +86,27 @@ class breakLog:
             elif line.find('was the duration of \'MEMORY INFO\'') != -1 and (TAG_Collect_MEMORY_INFO == 1):
                 TAG_Collect_MEMORY_INFO = 2
 
-            if (line.find('Total PSS by process:') != -1):
+            if (line.find('Total  (   PSS   SwapPss ) kB') != -1) or (line.find('DUMP OF SERVICE HIGH meminfo:') != -1):
                 TAG_Collect_DUMPSYS_MEMINFO = 1
             elif line.find('Tuning:') != -1 and (TAG_Collect_DUMPSYS_MEMINFO == 1):
                 TAG_Collect_DUMPSYS_MEMINFO = 2
 
+            if (line.find('LAST 3 HOURS:') != -1):
+                TAG_Collect_PROCSTATS = 1
+            elif line.find('Run time Stats:') != -1 and (TAG_Collect_PROCSTATS == 1):
+                TAG_Collect_PROCSTATS = 2
 
 
 
 
-
-            if (line.find('------ CPU') != -1):
+            if (line.find('DUMP OF SERVICE CRITICAL cpuinfo') != -1):
                 TAG_Collect_CPU_INFO = 1
-            elif line.find('was the duration of \'CPU') != -1 and (TAG_Collect_CPU_INFO == 1):
+            elif line.find('was the duration of dumpsys cpuinfo') != -1 and (TAG_Collect_CPU_INFO == 1):
                 TAG_Collect_CPU_INFO = 2
+
+
+
+
 
             if (line.find('------ PROCESSES AND THREADS') != -1):
                 TAG_Collect_PROCESSES_AND_THREADS = 1
@@ -148,10 +125,14 @@ class breakLog:
                STR_EVENT_LOG_AUX = STR_EVENT_LOG_AUX + line
             if TAG_Collect_SYSTEM_PROPERTIES == 1:
                STR_SYSTEM_PROPERTIES = STR_SYSTEM_PROPERTIES + line
+
             if TAG_Collect_MEMORY_INFO == 1:
                STR_MEMORY_INFO = STR_MEMORY_INFO + line
             if TAG_Collect_DUMPSYS_MEMINFO == 1:
                STR_DUMPSYS_MEMINFO = STR_DUMPSYS_MEMINFO + line
+            if TAG_Collect_PROCSTATS == 1:
+               STR_DUMPSYS_PROCSTATS = STR_DUMPSYS_PROCSTATS + line
+
             if TAG_Collect_CPU_INFO == 1:
                STR_CPU_INFO_AUX = STR_CPU_INFO_AUX + line
             if TAG_Collect_PROCESSES_AND_THREADS == 1:
@@ -169,6 +150,7 @@ class breakLog:
 
         log_segmenting.strMEMORY_INFO = STR_MEMORY_INFO
         log_segmenting.strDUMPSYS_MEMINFO = STR_DUMPSYS_MEMINFO
+        log_segmenting.strDUMPSYS_PROCSTATS = STR_DUMPSYS_PROCSTATS
 
 
         log_segmenting.strCPU_INFO = STR_CPU_INFO_AUX

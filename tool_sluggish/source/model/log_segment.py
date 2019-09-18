@@ -17,6 +17,9 @@ class log_segment:
 
         self.strMEMORY_INFO = ""
         self.strDUMPSYS_MEMINFO = ""
+        self.strDUMPSYS_PROCSTATS = ""
+
+        self.strCPU_INFO = ""
 
         self.listEVENT_LOG = ""
 

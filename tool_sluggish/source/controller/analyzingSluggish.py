@@ -28,51 +28,89 @@ class analyzingSluggish:
 #        self.explore_SYSTEM_LOG(brokeLog.strSYSTEM_LOG)
 
     def memory(self, segmented_log):
-        print("Analyze Memory")
-#        print(segmented_log.strMEMORY_INFO)
-#        print(segmented_log.strDUMPSYS_MEMINFO)
 
+        print("\n   Analyze Memory")
+        print("-----------------\n")
+
+        # Check DUMPSYS_MEMINFO
         vet_stringAux = segmented_log.strDUMPSYS_MEMINFO.splitlines()
-        list_Total_PSS_process = list()
+        processes = ""
+        data_memory = ""
+        cond_copy = True
+        report_memory = ""
+
         for line in vet_stringAux:
 
+            # Get Total_PSS_process
+            if (line.find("K:")!=-1) and cond_copy:
+                processes = processes + line + "\n"
+            if (line.find("Total PSS by OOM adjustment") != -1):
+                cond_copy = False
+            if (line.find("Total RAM:")!=-1) or (line.find("Free RAM:")!=-1) or (line.find("Used RAM:")!=-1) or (line.find("Lost RAM:")!=-1):
+                data_memory = data_memory + line + "\n"
+
+        report_memory = report_memory + "# Memory data\n"
+        report_memory = report_memory + data_memory
+        report_memory = report_memory + "\n# Memory consumption per process\n"
+        report_memory = report_memory + processes
+
+        #print(report_memory)
+
+
+        # Check PROCSTATS
+        #vet_stringAux = segmented_log.strDUMPSYS_PROCSTATS.splitlines()
+
+        #for line in vet_stringAux:
+        #    print(line)
+
+
+# -----------------------------------------------------------------------------------------------------------
 #            print(line)
 
-            # Get Total_PSS_process
-            STR_AUX = line
-            STR_Total_PSS_process = STR_AUX[:STR_AUX.find('K')]
+#            STR_AUX = line
+#            STR_Total_PSS_process = STR_AUX[:STR_AUX.find('K')]
 
             # Get process
-            STR_AUX = STR_AUX[STR_AUX.find('K')+2:]
-            STR_process = STR_AUX[:STR_AUX.find('(')]
+#            STR_AUX = STR_AUX[STR_AUX.find('K')+2:]
+#            STR_process = STR_AUX[:STR_AUX.find('(')]
 
             # Get PID process
-            STR_AUX = STR_AUX[STR_AUX.find('pid')+3:]
-            STR_PID = STR_AUX[:STR_AUX.find(')')]
+#            STR_AUX = STR_AUX[STR_AUX.find('pid')+3:]
+#            STR_PID = STR_AUX[:STR_AUX.find(')')]
 
 #            print(STR_Total_PSS_process)
 #            print(STR_process)
 #            print(STR_PID)
 
-            tuple = (STR_PID, STR_process, STR_Total_PSS_process)
-            list_Total_PSS_process.append(tuple)
+#            tuple = (STR_PID, STR_process, STR_Total_PSS_process)
+#            list_Total_PSS_process.append(tuple)
 
-            if (line.find("Total PSS by OOM adjustment") != -1):
-                break
+#        for item in list_Total_PSS_process:
+#            print(item[0] + " - " + item[1] + " - ")
 
+#        print(processes)
 
-        vet_stringAux = segmented_log.strMEMORY_INFO.splitlines()
-        for line in vet_stringAux:
-            print(line)
-
-
-
+        # Check MEMORY INFO
+#        print("# MEMORY INFO")
+#        vet_stringAux = segmented_log.strMEMORY_INFO.splitlines()
+#        for line in vet_stringAux:
+#            if (line.find("MemTotal")!=-1) or (line.find("MemFree")!=-1) or (line.find("MemAvailable")!=-1):
+#                print(" " + line)
 
 #        for item in list_Total_PSS_process:
 #            print(item[0] + " " + item[1])
+# -----------------------------------------------------------------------------------------------------------
+
+
 
     def cpu(self, segmented_log):
-        print("Analyze CPU")
+        print("\n   Analyze CPU")
+        print("-----------------\n")
+
+        print(segmented_log.strCPU_INFO)
+
+
+
 
     def temperature(self, segmented_log):
         print("Analyze Temperature")

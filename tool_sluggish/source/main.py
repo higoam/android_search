@@ -30,20 +30,25 @@ def main():
 
     if log_segmenting.strBUGREPORT == 1:
         analyzing_sluggish.memory(log_segmenting)
+
+
 #        print("BUGREPORT VERSION 1")
 #        log_segmenting = broken_log.segment_EVENT_LOG(log_segmenting)
 #        log_segmenting = broken_log.segment_SYSTEM_LOG(log_segmenting)
 
 
-
     elif log_segmenting.strBUGREPORT == 2:
+        analyzing_sluggish.memory(log_segmenting)
+        analyzing_sluggish.cpu(log_segmenting)
+
 #        print(log_segmenting.strPPOCESSES_AND_THREADS)
 
 #        print("BUGREPORT VERSION 2")
 #       log_segmenting = broken_log.segment_EVENT_LOG(log_segmenting)
 #       log_segmenting = broken_log.segment_SYSTEM_LOG(log_segmenting)
 #        print(log_segmenting.strSYSTEM_LOG)
-        analyzing_sluggish.memory(log_segmenting)
+#        print(log_segmenting.strDUMPSYS_PROCSTATS)
+#        analyzing_sluggish.memory(log_segmenting)
 #        analyzing_sluggish.cpu(log_segmenting)
 #        analyzing_sluggish.temperature(log_segmenting)
 #        analyzing_sluggish.inputSystem(log_segmenting)
