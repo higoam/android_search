@@ -1,0 +1,91 @@
+SA Performance
+
+1.1. An?lise de Sluggish in devices Androids por meio do log de dumpstate 
+
+O Sluggish ? o problema de lentid?o que pode ocorrer em smartphones ou tablets durante sua utiliza??o. Imagine que um smartphone com boa configura??o de hardware e software atualizado tenha elevado tempo para abrir a galeria de imagens, ou a passagem de uma aplica??o para outra dure muito tempo, ou ainda, o usu?rio n?o consegue assistir um streaming de v?deo ou de ?udio devido a lentid?o que o dispositivo apresenta, esses s?o exemplos do problema de Sluggish que podem ser inconvenientes ao usu?rio. 
+A investiga??o do problema de Sluggish ? fundamental para garantir melhor usabilidade por parte dos clientes e consequentemente garantir a reten??o deste consumidor, uma vez que este n?o ir? considerar o problema em futuras compras.
+Por?m a detec??o do problema e sua causa n?o ? uma tarefa f?cil, isso porque a lentid?o pode aparecer em qualquer ?rea do aparelho podendo ter origem por exemplo em uma aplica??o de terceiro, um drive do fornecedor, uma vers?o de software que n?o foi atualizada ou at? mesmo a forma como o usu?rio faz uso do aparelho. Os dois principais questionamentos que s?o realizados durante o enfrentamento deste problema s?o:
+?	O problema de Sluggish realmente existe ou a lentid?o apresentada ? um comportamento normal devido a limita??o do hardware e o dispositivo ser de baixa performance?
+?	Caso o Sluggish realmente exista, qual a causa dessa lentid?o?
+Muitas vari?veis s?o avaliadas para determinar se o comportamento do dispositivo ? o esperado por ser um dispositivo de baixa performance por exemplo, ou para determinar se a lentid?o ? real e localizar a causa do problema.
+Quando o problema em quest?o ? reportado para an?lise no time de System, geralmente possui em anexo apenas o log de dumpstate do dispositivo, sem qualquer conhecimento pr?vio das opera??es que o usu?rio fazia no instante da coleta do log, o que torna mais dif?cil a investiga??o da causa do problema. O log de dumpstate ? robusto, cont?m in?meras se??es e informa??es das mais variadas partes do dispositivo, mas ? humanamente imposs?vel de ser lida por completo, uma vez que pode chegar a mais de 200 mil linhas de informa??es.
+Para facilitar a an?lise dos logs dumpstate com foco nesta problem?tica, foi feito um estudo dos itens relevantes para a an?lise deste tipo de problema, buscando definir padr?es que definem a exist?ncia do sluggish. 
+
+
+
+
+Foi elaborado uma apresenta??o que detalha os avan?os alcan?ados quando a quest?o proposta, com os itens existente no log dumpstate 
+
+itens de avalia??o, assim como um pacote de software em Python foi desenvolvido, que extrai informa??es detalhas do log e exporta um relat?rio espec?fico para facilitar o diagn?stico da causa do problema.
+ 
+
+Apresenta??o - Treinamento 
+
+C?digo de an?lise de Sluggish
+
+
+
+
+
+1.2. C?digo de An?lise de Threads para o entendimento da causa de Crashes e ANRs
+
+
+
+
+
+
+# Descrever problema de Sluggish
+
+
+# Descrever material de apoio existente e como s?o feitas as anlises.
+
+
+# Descrever solu??o, c?digo
+
+
+# Descrever treinamento
+
+
+
+
+O processo de verifica??o do c?digo que ativa a fun??o A-GPS no telefone ? feito verificando v?rios arquivos tanto no c?digo do AP quanto do CP (modem). Esta verifica??o, dependendo do n?mero de modelos e de operadoras verificadas, pode ser bastante demorada se feito de forma manual. Em m?dia o processo de verifica??o leva de uma hora e meia a duas horas para ser conclu?do.
+
+	Para agilizar este processo foi desenvolvida uma ferramenta que tem se mostrado bastante ?til para os engenheiros respons?veis pelo A-GPS. A interface da ferramenta e o seu modo de opera??o s?o descritos a seguir:
+        
+
+   
+ 2. Fields description:
+         AP: Endere?o dos arquivos de AP que cont?m o sistema operacional e os Apks.
+         CSC: Endere?o dos arquivos de CSC que cont?m as configura??es das operadoras.
+         CP: Endere?o dos arquivos de modem.
+         SKUs: Sigla das operadoras que ser?o analisadas.
+         Modem chipset: Fabricante do chip de modem: LSI (Samsung), Qualcomm ou Mediatek
+         GPS chipset: Fabricante do chip de gps: LSI (Samsung), Qualcomm ou Mediatek
+
+
+         CONTROL PLANE: Seleciona o modo Control Plane (3G) do A-GPS para verifica??o.
+         SUPL: Seleciona o modo SUPL (4G) do A-GPS para verifica??o.
+         Nota: Ambos os modos podem ser verificados.
+         Status: ?rea onde aparecem os resultados da an?lise.
+ 3. Buttons description
+         Check: Inicia a verifica??o de A-GPS.
+         Save: Salva o resultado em arquivo texto.
+
+
+Ap?s entrar com as informa??es acima a ferramenta executa os seguintes passos:
+
+1.	Se conecta no Perforce, que ? a plataforma de versionamento de software, usando o id e senha do usu?rio;
+2.	Faz o download dos arquivos onde existem as configura??es de A-GPS e analisa estes arquivos para ver se as configura??es de A-GPS est?o corretas.
+
+Os resultados obtidos com o uso desta ferramenta s?o os seguintes:
+
+?	Diminui??o do tempo de verifica??o para cerca de 3 a 5 minutos, o que significa em m?dia uma redu??o de 80% no tempo de verifica??o.
+?	Garantia da confiabilidade da verifica??o do c?digo, j? que ? feita de forma autom?tica sem a interven??o humana.
+
+Exemplo de an?lise para o modelo: SM-G610M para operadoras da Col?mbia e E quador.
+
+ 
+4.	Fluxograma de funcionamento
+ 
+
+
