@@ -1,14 +1,17 @@
 import sys
 
 from controller.breakLog import breakLog
+from controller.Analysis import Analysis
 from model.Thread import Thread
 from model.process import process
+
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 def main():
 
     #Auxiliar
     breakingLog = breakLog()
+    analyzing = Analysis()
 
     listProcess = list()
 
@@ -18,17 +21,15 @@ def main():
     logReadText = read_log()
 
     # Quebra Log
-    listProcess = breakingLog.createList(logReadText)
+    processListData = breakingLog.createList(logReadText)
 
-    print(len(listProcess))
-
-    for item in listProcess:
-        print(item.headProc)
-
+#    for item in processListData:
+#        for item2 in item.listThreads:
+#            print(item2.threadText)
 
 
     # Analisa e Imprime Log
-
+    analyzing.analysisProcess(processListData[1])
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 def read_log():

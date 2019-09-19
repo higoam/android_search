@@ -2,38 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4e5e318-1592-45b1-8c0a-20c594520513" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/controller/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/controller/analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/controller/breakLog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/model/Thread.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/model/process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/act_dumpstate.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_1559075577206.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_1560214092472.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_A920FXXU1BSC5_201905131044.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_A920FXXU1BSC5_201905131325.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_A920FXXU1BSC5_201905231427.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_A920FXXU1BSF5_201906061743.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_G950FXXU4DSDA_201905211514.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_G950FXXU4DSDA_201905211518.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J410GUBU1ASE5_201905241059.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J600GUBU3BSC4_201903181526.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J610GUBE1BSC2_201903141449.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J610GUBU1ARIQ_201905221640.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J701MUBU6CSF2_201906181615.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J701MUBU6CSF2_201906181655.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_N950FXXU1AQI1_201709072125.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_N950FXXU1AQI1_201709072131.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_T515XXU1ASEB_201905271123.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tool_sluggish/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tool_sluggish/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tool_sluggish/source/controller/analyzingSluggish.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tool_sluggish/source/controller/analyzingSluggish.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tool_sluggish/source/controller/breakLog.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tool_sluggish/source/controller/breakLog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tool_sluggish/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tool_sluggish/source/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tool_sluggish/source/model/log_segment.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tool_sluggish/source/model/log_segment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tool_sluggish/source/script_all_suite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/controller/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/controller/Analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/controller/breakLog.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/controller/breakLog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/model/Thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/model/Thread.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="465">
+              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -58,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/controller/breakLog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="33" />
+            <state relative-caret-position="181">
+              <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="43" />
               <folding>
                 <element signature="e#1#32#0" expanded="true" />
               </folding>
@@ -71,23 +45,30 @@
         <entry file="file://$PROJECT_DIR$/source/model/process.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="21" />
+              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/model/Thread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+            <state relative-caret-position="200">
+              <caret line="52" column="42" lean-forward="true" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/controller/analysis.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/source/controller/Analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#1#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -102,8 +83,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>createProcess</find>
-      <find>prin</find>
       <find>processNo</find>
+      <find>prin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,18 +95,19 @@
       <list>
         <option value="$PROJECT_DIR$/source/controller/analysis.py" />
         <option value="$PROJECT_DIR$/source/model/thread.py" />
-        <option value="$PROJECT_DIR$/source/model/Thread.py" />
         <option value="$PROJECT_DIR$/source/model/process.py" />
         <option value="$PROJECT_DIR$/source/controller/breakLog.py" />
+        <option value="$PROJECT_DIR$/source/controller/Analysis.py" />
         <option value="$PROJECT_DIR$/source/main.py" />
+        <option value="$PROJECT_DIR$/source/model/Thread.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="993" />
-    <option name="y" value="27" />
-    <option name="width" value="907" />
-    <option name="height" value="1053" />
+    <option name="y" value="25" />
+    <option name="width" value="927" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -218,15 +200,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="993" y="27" width="907" height="1053" extended-state="4" />
+    <frame x="993" y="25" width="927" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23303168" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22787611" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1512792" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1509434" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -241,22 +223,32 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/controller/analysis.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/model/Thread.py">
+    <entry file="file://$PROJECT_DIR$/source/controller/breakLog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        <state relative-caret-position="181">
+          <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="43" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/controller/breakLog.py">
+    <entry file="file://$PROJECT_DIR$/source/controller/Analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="33" />
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -264,17 +256,14 @@
     <entry file="file://$PROJECT_DIR$/source/model/process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="21" />
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/main.py">
+    <entry file="file://$PROJECT_DIR$/source/model/Thread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="200">
+          <caret line="52" column="42" lean-forward="true" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
         </state>
       </provider>
     </entry>

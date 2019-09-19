@@ -49,7 +49,7 @@ class breakLog:
             # Cabecalho do Processo
             if (item.find('prio=') != -1) and firstThread:
                 firstThread = False
-                process.headProc = stringAUX
+                processNode.headProc = stringAUX
                 stringAUX = ""
 
             # Threads do Processo

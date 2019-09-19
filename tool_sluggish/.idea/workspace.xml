@@ -2,38 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd9621f3-9ef7-4a4c-b1e2-bc51f6d7c45f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../traces_log_analysis/source/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../traces_log_analysis/source/controller/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../traces_log_analysis/source/controller/analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../traces_log_analysis/source/controller/breakLog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../traces_log_analysis/source/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../traces_log_analysis/source/model/Thread.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../traces_log_analysis/source/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../traces_log_analysis/source/model/process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/act_dumpstate.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_1559075577206.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_1560214092472.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_A920FXXU1BSC5_201905131044.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_A920FXXU1BSC5_201905131325.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_A920FXXU1BSC5_201905231427.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_A920FXXU1BSF5_201906061743.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_G950FXXU4DSDA_201905211514.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_G950FXXU4DSDA_201905211518.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J410GUBU1ASE5_201905241059.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J600GUBU3BSC4_201903181526.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J610GUBE1BSC2_201903141449.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J610GUBU1ARIQ_201905221640.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J701MUBU6CSF2_201906181615.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_J701MUBU6CSF2_201906181655.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_N950FXXU1AQI1_201709072125.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_N950FXXU1AQI1_201709072131.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../benchmarks_dumpStates/dumpState_T515XXU1ASEB_201905271123.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/controller/analyzingSluggish.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/controller/analyzingSluggish.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/controller/breakLog.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/controller/breakLog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/model/log_segment.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/model/log_segment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/script_all_suite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../traces_log_analysis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../traces_log_analysis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../traces_log_analysis/source/controller/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/../traces_log_analysis/source/controller/Analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../traces_log_analysis/source/controller/breakLog.py" beforeDir="false" afterPath="$PROJECT_DIR$/../traces_log_analysis/source/controller/breakLog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../traces_log_analysis/source/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../traces_log_analysis/source/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../traces_log_analysis/source/model/Thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../traces_log_analysis/source/model/Thread.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
