@@ -1,11 +1,15 @@
 
 from model.Thread import Thread
-from model.process import process
+from model.Process import Process
 
-class breakLog:
+class BreakLog:
 
+    def __init__(self):
+        self.list = list()
 
-    def createList(self, logRead):
+    def createListProcess(self, logRead):
+
+        print("TESTE3")
 
         processAUX = ""
         listProcessText = list()
@@ -35,7 +39,7 @@ class breakLog:
         listThread = list()
         listThreadText = list()
 
-        processNode = process()
+        processNode = Process()
 
         firstThread = True
         creatingThread = False
@@ -74,10 +78,6 @@ class breakLog:
         return processNode
 
         #self.createThread(listThreadText[1])
-
-#        for item in listThreadText:
-#            print("Thread")
-#            print(item)
 
 
 

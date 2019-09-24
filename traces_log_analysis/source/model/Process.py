@@ -1,6 +1,6 @@
 
 
-class process:
+class Process:
 
     def __init__(self):
 

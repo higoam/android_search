@@ -7,6 +7,7 @@ class Thread:
         self.threadText = threadText
 
         #Line 0
+        self.firstLine = ""         #
         self.threadName = ""        #
         self.prio = ""              #
         self.tid = ""               #
@@ -42,46 +43,72 @@ class Thread:
 
         #Others Line
         self.threadActivities = ""  #
+        self.listWaiting = list()   #
+        self.listLocked = list()    #
+
 
         self.gettingThreadInformation()
 
     def gettingThreadInformation(self):
 
+        getThreadActivities = False
+
         stringAUX = ""
         for line in self.threadText.splitlines():
 
+            # Thread Activities -- --------------------------------------->
+            if (getThreadActivities == True):
+                self.threadActivities = self.threadActivities + line + "\n"
+
+
+
+            # Line 0 ---------------------------------------------------->
             if (line.find('prio=') != -1):
                 stringAUX = line
+
+                self.firstLine = line
+                # Get Thread Name
                 self.threadName = stringAUX[1:stringAUX.find('\"',1)]
+
                 if (stringAUX.find('(not attached)') != -1):
-                    print("Falta Tratar esse caso, pegar o prio")
-                    print(stringAUX)
+
+                    self.tid = "!"
+                    self.threadStatus = "!"
                 else:
 
-#                    print(stringAUX.find('prio='))
-#                    print(stringAUX.find('tid='))
+                    # Get Prio
                     self.prio = stringAUX[ stringAUX.find('prio=')+5: stringAUX.find('tid=')]
-                    self.tid = ""  #
-                    self.threadStatus = ""  #
 
+                    # Get Prio
+                    strAUX = stringAUX[ stringAUX.find('tid=')+4:]
+                    self.tid = strAUX[:strAUX.find(" ")]
+
+                    # Get Status Thread
+                    self.threadStatus = strAUX[strAUX.find(" ")+1:]
+
+            # Line 1 ---------------------------------------------------->
             if (line.find('group=') != -1):
                 stringAUX = line
 
+            # Line 2 ---------------------------------------------------->
             if (line.find('sysTid=') != -1):
                 stringAUX = line
 
+            #Line 3
             if (line.find('state=') != -1):
                 stringAUX = line
 
+            # Line 4
+            if (line.find('stack=') != -1):
+                stringAUX = line
 
-        print(self.threadName)
-        print(self.prio)
+            # Line 5
+            if (line.find('mutexes=') != -1):
 
+                stringAUX = line
 
-
-
-
-
+                getThreadActivities = True
+                stringAUX = ""
 
 
 
