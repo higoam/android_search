@@ -1,0 +1,667 @@
+
+"FinalizerDaemon" daemon prio=5 tid=3 Waiting
+  - waiting on <0x0ac0027e> (a java.lang.Object)
+  - locked <0x0ac0027e> (a java.lang.Object)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x0ff7a3df> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x0ff7a3df> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=5 Sleeping
+  - sleeping on <0x0dd8e82c> (a java.lang.Object)
+  - locked <0x0dd8e82c> (a java.lang.Object)
+
+"HeapTaskDaemon" daemon prio=5 tid=6 Blocked
+  - waiting to lock an unknown object
+
+"Binder:1996_1" prio=5 tid=7 Blocked
+  - waiting to lock <0x0a2072f5> (a com.facebook.katana.provider.AttributionIdProvider) held by thread 14
+
+"PersistToDiskThread" prio=5 tid=10 TimedWaiting
+  - waiting on <0x0155c88a> (a java.lang.Object)
+  - locked <0x0155c88a> (a java.lang.Object)
+
+"pool-1-thread-1" prio=5 tid=11 TimedWaiting
+  - waiting on <0x095c9efb> (a java.lang.Object)
+  - locked <0x095c9efb> (a java.lang.Object)
+
+"CallOnCreateImpl" prio=5 tid=12 Waiting
+  - waiting on <0x06025b18> (a X.0MF)
+  - locked <0x06025b18> (a X.0MF)
+
+"Binder:1996_3" prio=5 tid=14 TimedWaiting
+  - waiting on <0x03524971> (a X.0Ke)
+  - locked <0x03524971> (a X.0Ke)
+  - locked <0x03524971> (a X.0Ke)
+  - locked <0x0acfe356> (a X.0NN)
+  - locked <0x0acfe356> (a X.0NN)
+  - locked <0x0a2072f5> (a com.facebook.katana.provider.AttributionIdProvider)
+
+"Binder:1996_4" prio=5 tid=15 Blocked
+  - waiting to lock <0x0a2072f5> (a com.facebook.katana.provider.AttributionIdProvider) held by thread 14
+
+"AppChoreographer-idle-2" prio=5 tid=19 Waiting
+  - waiting on <0x0c4c2fd7> (a java.lang.Object)
+  - locked <0x0c4c2fd7> (a java.lang.Object)
+
+"AppChoreographer-idle-1" prio=5 tid=20 Waiting
+  - waiting on <0x0a4e10c4> (a java.lang.Object)
+  - locked <0x0a4e10c4> (a java.lang.Object)
+
+"AppChoreographer-main" prio=5 tid=21 Blocked
+  - waiting to lock <0x0acfe356> (a X.0NN) held by thread 14
+
+"ReferenceQueueDaemon" daemon prio=5 tid=3 Waiting
+  - waiting on <0x0d303b5b> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x0d303b5b> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x03012ff8> (a java.lang.Object)
+  - locked <0x03012ff8> (a java.lang.Object)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=5 Sleeping
+  - sleeping on <0x04407075> (a java.lang.Object)
+  - locked <0x04407075> (a java.lang.Object)
+
+"HeapTaskDaemon" daemon prio=5 tid=6 Blocked
+  - waiting to lock an unknown object
+
+"ActivityManager" prio=5 tid=11 TimedWaiting
+  - waiting on <0x03291880> (a com.android.server.am.ActivityManagerService$DumpStackFileObserver)
+  - locked <0x03291880> (a com.android.server.am.ActivityManagerService$DumpStackFileObserver)
+
+"CpuTracker" prio=5 tid=21 TimedWaiting
+  - waiting on <0x0123f336> (a com.android.server.am.ActivityManagerService$4)
+  - locked <0x0123f336> (a com.android.server.am.ActivityManagerService$4)
+  - locked <0x022d3237> (a java.lang.Object)
+  - locked <0x00f69eb9> (a java.lang.Object)
+  - locked <0x001553a4> (a java.lang.Object)
+  - locked <0x0d68c50d> (a java.io.InputStreamReader)
+  - locked <0x0d68c50d> (a java.io.InputStreamReader)
+  - locked <0x06b40cc2> (a java.lang.Object)
+  - locked <0x0698bad3> (a java.io.InputStreamReader)
+  - locked <0x0698bad3> (a java.io.InputStreamReader)
+
+"Timer-0" prio=5 tid=69 TimedWaiting
+  - waiting on <0x0a260610> (a java.util.TaskQueue)
+  - locked <0x0a260610> (a java.util.TaskQueue)
+
+"LazyAspectRatioWriterThread" prio=5 tid=71 Waiting
+  - waiting on <0x0869a509> (a com.android.server.wm.AspectRatioController)
+  - locked <0x0869a509> (a com.android.server.wm.AspectRatioController)
+
+"NaviBarHidePolicyWriterThread" prio=5 tid=72 Waiting
+  - waiting on <0x033a330e> (a com.android.server.wm.NaviBarHidePolicyController)
+  - locked <0x033a330e> (a com.android.server.wm.NaviBarHidePolicyController)
+  - locked <0x062a312f> (a java.lang.Object)
+  - locked <0x044d733c> (a java.lang.Object)
+  - locked <0x0a7e88c5> (a java.lang.Object)
+  - locked <0x02ea721a> (a java.lang.Object)
+  - locked <0x06b2b14b> (a java.lang.Object)
+  - locked <0x071c8728> (a java.lang.Object)
+
+"Thread-16" prio=5 tid=50 Waiting
+  - waiting on <0x0943ec41> (a java.lang.Object)
+  - locked <0x0943ec41> (a java.lang.Object)
+  - locked <0x0f2d95e6> (a java.lang.Object)
+
+"TaskSnapshotPersister" prio=5 tid=153 Waiting
+  - waiting on <0x0ff91727> (a java.lang.Object)
+  - locked <0x0ff91727> (a java.lang.Object)
+
+"PhotonicModulator" prio=5 tid=156 Waiting
+  - waiting on <0x0146edd4> (a java.lang.Object)
+  - locked <0x0146edd4> (a java.lang.Object)
+
+"Timer-2" daemon prio=5 tid=159 TimedWaiting
+  - waiting on <0x0da20b7d> (a java.util.TaskQueue)
+  - locked <0x0da20b7d> (a java.util.TaskQueue)
+
+"LazyTaskWriterThread" prio=5 tid=164 Waiting
+  - waiting on <0x0d2d2a72> (a com.android.server.am.TaskPersister)
+  - locked <0x0d2d2a72> (a com.android.server.am.TaskPersister)
+
+"watchdog" prio=5 tid=174 TimedWaiting
+  - waiting on <0x0555fec3> (a com.android.server.Watchdog)
+  - locked <0x0555fec3> (a com.android.server.Watchdog)
+  - locked <0x070f1340> (a java.lang.Object)
+
+"pool-5-thread-1" prio=5 tid=212 Waiting
+  - waiting on <0x0cc8e279> (a java.lang.Object)
+  - locked <0x0cc8e279> (a java.lang.Object)
+
+"Thread-37" prio=5 tid=218 Waiting
+  - waiting on <0x091a5d97> (a com.samsung.android.hardware.display.AfterimageCompensationService$AfcThread)
+  - locked <0x091a5d97> (a com.samsung.android.hardware.display.AfterimageCompensationService$AfcThread)
+
+"Binder:4784_1C" prio=5 tid=193 Blocked
+  - waiting to lock <0x00f69eb9> (a java.lang.Object) held by thread 32
+  - locked <0x097422fe> (a android.util.SparseArray)
+
+"Okio Watchdog" daemon prio=5 tid=237 Waiting
+  - waiting on <0x0d0fc41f> (a java.lang.Class<com.android.okhttp.okio.AsyncTimeout>)
+  - locked <0x0d0fc41f> (a java.lang.Class<com.android.okhttp.okio.AsyncTimeout>)
+
+"pool-3-thread-1" prio=5 tid=211 Waiting
+  - waiting on <0x0c72236c> (a java.lang.Object)
+  - locked <0x0c72236c> (a java.lang.Object)
+
+"pool-1-thread-1" prio=5 tid=227 Waiting
+  - waiting on <0x04ec2d35> (a java.lang.Object)
+  - locked <0x04ec2d35> (a java.lang.Object)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x0c4e392d> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x0c4e392d> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x08883e62> (a java.lang.Object)
+  - locked <0x08883e62> (a java.lang.Object)
+
+"HeapTaskDaemon" daemon prio=5 tid=6 Blocked
+  - waiting to lock an unknown object
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=7 Waiting
+  - waiting on <0x06d09bf3> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x06d09bf3> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"Thread-5" daemon prio=1 tid=12 Waiting
+  - waiting on <0x0748a0b0> (a java.lang.Object)
+  - locked <0x0748a0b0> (a java.lang.Object)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x092cb096> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x092cb096> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x0fd91417> (a java.lang.Object)
+  - locked <0x0fd91417> (a java.lang.Object)
+
+"HeapTaskDaemon" daemon prio=5 tid=6 Blocked
+  - waiting to lock an unknown object
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=7 Waiting
+  - waiting on <0x0e8929ed> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x0e8929ed> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x05145b19> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x05145b19> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x0bc297de> (a java.lang.Object)
+  - locked <0x0bc297de> (a java.lang.Object)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=6 Waiting
+  - waiting on <0x06868fd5> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x06868fd5> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"HeapTaskDaemon" daemon prio=5 tid=7 Blocked
+  - waiting to lock an unknown object
+
+"Okio Watchdog" daemon prio=5 tid=19 Waiting
+  - waiting on <0x0c83ec8c> (a java.lang.Class<com.android.okhttp.okio.AsyncTimeout>)
+  - locked <0x0c83ec8c> (a java.lang.Class<com.android.okhttp.okio.AsyncTimeout>)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x0e2587fc> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x0e2587fc> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x0e51de85> (a java.lang.Object)
+  - locked <0x0e51de85> (a java.lang.Object)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=6 Waiting
+  - waiting on <0x0285f3f2> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x0285f3f2> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"HeapTaskDaemon" daemon prio=5 tid=7 Blocked
+  - waiting to lock an unknown object
+
+"HeapTaskDaemon" daemon prio=5 tid=4 Blocked
+  - waiting to lock an unknown object
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x0f621fbe> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x0f621fbe> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"FinalizerDaemon" daemon prio=5 tid=6 Waiting
+  - waiting on <0x097b8f04> (a java.lang.Object)
+  - locked <0x097b8f04> (a java.lang.Object)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=7 Waiting
+  - waiting on <0x00474ced> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x00474ced> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x041a2722> (a java.lang.Object)
+
+"Thread-12" daemon prio=1 tid=38 Waiting
+  - waiting on <0x0d5b35b3> (a java.lang.Object)
+  - locked <0x0d5b35b3> (a java.lang.Object)
+
+"pool-1-thread-1" prio=5 tid=39 Waiting
+  - waiting on <0x05a49770> (a java.lang.Object)
+  - locked <0x05a49770> (a java.lang.Object)
+
+"Thread-21" daemon prio=1 tid=22 Waiting
+  - waiting on <0x0dd8cae9> (a java.lang.Object)
+  - locked <0x0dd8cae9> (a java.lang.Object)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x079c926e> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x079c926e> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"HeapTaskDaemon" daemon prio=5 tid=5 Blocked
+  - waiting to lock an unknown object
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=6 Waiting
+  - waiting on <0x0c8d7e78> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x0c8d7e78> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"FinalizerDaemon" daemon prio=5 tid=7 Waiting
+  - waiting on <0x08c6519c> (a java.lang.Object)
+  - locked <0x08c6519c> (a java.lang.Object)
+
+"Thread-5" prio=5 tid=16 Sleeping
+  - sleeping on <0x03f677a5> (a java.lang.Object)
+  - locked <0x03f677a5> (a java.lang.Object)
+
+"FinalizerDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x07445240> (a java.lang.Object)
+  - locked <0x07445240> (a java.lang.Object)
+
+"HeapTaskDaemon" daemon prio=5 tid=5 Blocked
+  - waiting to lock an unknown object
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=6 Waiting
+  - waiting on <0x06a6b579> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x06a6b579> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=7 Waiting
+  - waiting on <0x04dc52be> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x04dc52be> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"Timer-26" prio=5 tid=21 Waiting
+  - waiting on <0x01bc4912> (a java.util.TaskQueue)
+  - locked <0x01bc4912> (a java.util.TaskQueue)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x057b4022> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x057b4022> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x0adb77e9> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x0adb77e9> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"FinalizerDaemon" daemon prio=5 tid=6 Waiting
+  - waiting on <0x0181d870> (a java.lang.Object)
+  - locked <0x0181d870> (a java.lang.Object)
+
+"HeapTaskDaemon" daemon prio=5 tid=8 Blocked
+  - waiting to lock an unknown object
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x0fa38f1d> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x0fa38f1d> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x0bacf592> (a java.lang.Object)
+  - locked <0x0bacf592> (a java.lang.Object)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=6 Waiting
+  - waiting on <0x0c633b63> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x0c633b63> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"HeapTaskDaemon" daemon prio=5 tid=7 Blocked
+  - waiting to lock an unknown object
+
+"GLThread 62" prio=5 tid=11 Waiting
+  - waiting on <0x03eaa360> (a android.opengl.GLSurfaceView$GLThreadManager)
+  - locked <0x03eaa360> (a android.opengl.GLSurfaceView$GLThreadManager)
+
+"Thread-6" daemon prio=1 tid=13 Waiting
+  - waiting on <0x04ef0019> (a java.lang.Object)
+  - locked <0x04ef0019> (a java.lang.Object)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x05b088a4> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x05b088a4> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x08a4560d> (a java.lang.Object)
+  - locked <0x08a4560d> (a java.lang.Object)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=6 Waiting
+  - waiting on <0x0aeffede> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x0aeffede> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"HeapTaskDaemon" daemon prio=5 tid=7 Blocked
+  - waiting to lock an unknown object
+
+"pool-1-thread-1" prio=5 tid=12 Waiting
+  - waiting on <0x094133d3> (a java.lang.Object)
+  - locked <0x094133d3> (a java.lang.Object)
+
+"Recents-HighResThumbnailLoader" prio=5 tid=19 Waiting
+  - waiting on <0x06bf8b10> (a java.util.ArrayDeque)
+  - locked <0x06bf8b10> (a java.util.ArrayDeque)
+
+"Recents-TaskResourceLoader" prio=5 tid=20 Waiting
+  - waiting on <0x0a4d4609> (a com.android.systemui.recents.model.TaskResourceLoadQueue)
+  - locked <0x0a4d4609> (a com.android.systemui.recents.model.TaskResourceLoadQueue)
+
+"pool-2-thread-1" prio=5 tid=39 Waiting
+  - waiting on <0x0233c00e> (a java.lang.Object)
+  - locked <0x0233c00e> (a java.lang.Object)
+
+"Thread-9" prio=5 tid=43 Waiting
+  - waiting on <0x0d613a2f> (a java.lang.Object)
+  - locked <0x0d613a2f> (a java.lang.Object)
+
+"Thread-10" daemon prio=1 tid=11 Waiting
+  - waiting on <0x017a483c> (a java.lang.Object)
+  - locked <0x017a483c> (a java.lang.Object)
+
+"InflaterThread #789" prio=5 tid=48 TimedWaiting
+  - waiting on <0x0dedb6e4> (a java.lang.Object)
+  - locked <0x0dedb6e4> (a java.lang.Object)
+
+"InflaterThread #790" prio=5 tid=50 TimedWaiting
+  - waiting on <0x0448874d> (a java.lang.Object)
+  - locked <0x0448874d> (a java.lang.Object)
+
+"InflaterThread #791" prio=5 tid=51 TimedWaiting
+  - waiting on <0x0ea94202> (a java.lang.Object)
+  - locked <0x0ea94202> (a java.lang.Object)
+
+"InflaterThread #792" prio=5 tid=52 TimedWaiting
+  - waiting on <0x0fb9e713> (a java.lang.Object)
+  - locked <0x0fb9e713> (a java.lang.Object)
+
+"AsyncTask #1985" prio=5 tid=46 TimedWaiting
+  - waiting on <0x02415d50> (a java.lang.Object)
+  - locked <0x02415d50> (a java.lang.Object)
+
+"AsyncTask #1986" prio=5 tid=53 TimedWaiting
+  - waiting on <0x0c234b49> (a java.lang.Object)
+  - locked <0x0c234b49> (a java.lang.Object)
+
+"AsyncTask #1987" prio=5 tid=55 TimedWaiting
+  - waiting on <0x0f6d7c4e> (a java.lang.Object)
+  - locked <0x0f6d7c4e> (a java.lang.Object)
+
+"AsyncTask #1988" prio=5 tid=56 TimedWaiting
+  - waiting on <0x0fd1e16f> (a java.lang.Object)
+  - locked <0x0fd1e16f> (a java.lang.Object)
+  - locked <0x0ca3107f> (a java.lang.Object)
+  - locked <0x01aee84c> (a btb)
+
+"FinalizerDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x09084095> (a java.lang.Object)
+  - locked <0x09084095> (a java.lang.Object)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x046f15aa> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x046f15aa> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=6 Sleeping
+  - sleeping on <0x0762359b> (a java.lang.Object)
+  - locked <0x0762359b> (a java.lang.Object)
+
+"HeapTaskDaemon" daemon prio=5 tid=7 Blocked
+  - waiting to lock an unknown object
+
+"Queue" prio=10 tid=14 Waiting
+  - waiting on <0x02083d38> (a java.lang.Object)
+  - locked <0x02083d38> (a java.lang.Object)
+
+"Queue" prio=10 tid=15 Waiting
+  - waiting on <0x01795111> (a java.lang.Object)
+  - locked <0x01795111> (a java.lang.Object)
+
+"Queue" prio=10 tid=16 Waiting
+  - waiting on <0x0b80e276> (a java.lang.Object)
+  - locked <0x0b80e276> (a java.lang.Object)
+
+"Queue" prio=10 tid=17 Waiting
+  - waiting on <0x08249077> (a java.lang.Object)
+  - locked <0x08249077> (a java.lang.Object)
+
+"Queue" prio=10 tid=18 Waiting
+  - waiting on <0x0e9ff4e4> (a java.lang.Object)
+  - locked <0x0e9ff4e4> (a java.lang.Object)
+
+"Queue" prio=10 tid=19 Waiting
+  - waiting on <0x0310ed4d> (a java.lang.Object)
+  - locked <0x0310ed4d> (a java.lang.Object)
+
+"Queue" prio=10 tid=20 Waiting
+  - waiting on <0x0d10b002> (a java.lang.Object)
+  - locked <0x0d10b002> (a java.lang.Object)
+
+"Queue" prio=10 tid=22 Waiting
+  - waiting on <0x0947bd13> (a java.lang.Object)
+  - locked <0x0947bd13> (a java.lang.Object)
+
+"Queue" prio=10 tid=23 Waiting
+  - waiting on <0x0ed97b50> (a java.lang.Object)
+  - locked <0x0ed97b50> (a java.lang.Object)
+
+"Answers Events Handler1" prio=5 tid=24 Waiting
+  - waiting on <0x060c1149> (a java.lang.Object)
+  - locked <0x060c1149> (a java.lang.Object)
+
+"Crashlytics Exception Handler1" prio=5 tid=26 Waiting
+  - waiting on <0x07ddca4e> (a java.lang.Object)
+  - locked <0x07ddca4e> (a java.lang.Object)
+
+"bms" prio=5 tid=38 TimedWaiting
+  - waiting on <0x0367176f> (a java.lang.Object)
+  - locked <0x0367176f> (a java.lang.Object)
+
+"pool-4-thread-1" prio=5 tid=42 TimedWaiting
+  - waiting on <0x0ae2fc7c> (a java.lang.Object)
+  - locked <0x0ae2fc7c> (a java.lang.Object)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x0f8bfbb5> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x0f8bfbb5> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x0849824a> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x0849824a> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"FinalizerDaemon" daemon prio=5 tid=6 Waiting
+  - waiting on <0x09370ad8> (a java.lang.Object)
+  - locked <0x09370ad8> (a java.lang.Object)
+
+"HeapTaskDaemon" daemon prio=5 tid=7 Blocked
+  - waiting to lock an unknown object
+
+"ioTaskQueue-1" prio=3 tid=15 Waiting
+  - waiting on <0x0ccd9e31> (a java.lang.Object)
+  - locked <0x0ccd9e31> (a java.lang.Object)
+
+"ioTaskQueue-2" prio=3 tid=16 Waiting
+  - waiting on <0x04a57916> (a java.lang.Object)
+  - locked <0x04a57916> (a java.lang.Object)
+
+"TimeoutCheckThread-1" prio=3 tid=18 TimedWaiting
+  - waiting on <0x025d7297> (a java.lang.Object)
+  - locked <0x025d7297> (a java.lang.Object)
+
+"Contact.ContactsCache.TaskStack worker thread" prio=4 tid=19 Waiting
+  - waiting on <0x027dfc84> (a java.util.ArrayList)
+  - locked <0x027dfc84> (a java.util.ArrayList)
+
+"ioTaskQueue-3" prio=3 tid=20 Waiting
+  - waiting on <0x04acec6d> (a java.lang.Object)
+  - locked <0x04acec6d> (a java.lang.Object)
+
+"mmsTaskExecutor-1" prio=5 tid=21 Waiting
+  - waiting on <0x06f810a2> (a java.lang.Object)
+  - locked <0x06f810a2> (a java.lang.Object)
+
+"LocoSessionJobThread-1" prio=5 tid=17 Waiting
+  - waiting on <0x0bfca133> (a java.lang.Object)
+  - locked <0x0bfca133> (a java.lang.Object)
+
+"ioTaskQueue-4" prio=3 tid=22 Waiting
+  - waiting on <0x04205cf0> (a java.lang.Object)
+  - locked <0x04205cf0> (a java.lang.Object)
+
+"chatRoom list sortExecutor-1" prio=3 tid=34 Waiting
+  - waiting on <0x0fb8e269> (a java.lang.Object)
+  - locked <0x0fb8e269> (a java.lang.Object)
+
+"sendExecutor-1" prio=3 tid=36 Waiting
+  - waiting on <0x0cea94ee> (a java.lang.Object)
+  - locked <0x0cea94ee> (a java.lang.Object)
+
+"mmsTaskExecutor-2" prio=5 tid=37 Waiting
+  - waiting on <0x07561d8f> (a java.lang.Object)
+  - locked <0x07561d8f> (a java.lang.Object)
+
+"locoPushExecutorService-1" prio=4 tid=12 Waiting
+  - waiting on <0x06743c25> (a java.lang.Object)
+  - locked <0x06743c25> (a java.lang.Object)
+
+"locoPushExecutorService-2" prio=4 tid=39 Waiting
+  - waiting on <0x036f11fa> (a java.lang.Object)
+  - locked <0x036f11fa> (a java.lang.Object)
+
+"Picasso-refQueue" daemon prio=5 tid=38 TimedWaiting
+  - waiting on <0x0f2103ab> (a java.lang.Object)
+  - locked <0x0f2103ab> (a java.lang.Object)
+
+"PingThread-1" prio=5 tid=29 Waiting
+  - waiting on <0x016eda08> (a java.lang.Object)
+  - locked <0x016eda08> (a java.lang.Object)
+
+"bitmapTaskQueue-1" prio=3 tid=45 Waiting
+  - waiting on <0x028c53c6> (a java.lang.Object)
+  - locked <0x028c53c6> (a java.lang.Object)
+
+"bitmapTaskQueue-2" prio=3 tid=46 Waiting
+  - waiting on <0x091b8eb4> (a java.lang.Object)
+  - locked <0x091b8eb4> (a java.lang.Object)
+
+"bitmapTaskQueue-3" prio=3 tid=47 Waiting
+  - waiting on <0x09e9e652> (a java.lang.Object)
+  - locked <0x09e9e652> (a java.lang.Object)
+
+"bitmapTaskQueue-4" prio=3 tid=48 Waiting
+  - waiting on <0x02303d23> (a java.lang.Object)
+  - locked <0x02303d23> (a java.lang.Object)
+
+"Thread-5" prio=5 tid=53 Waiting
+  - waiting on <0x049237d9> (a java.lang.Object)
+  - locked <0x049237d9> (a java.lang.Object)
+
+"Thread-6" prio=5 tid=54 Waiting
+  - waiting on <0x02bf887f> (a java.lang.Object)
+  - locked <0x02bf887f> (a java.lang.Object)
+
+"Picasso-Idle" prio=5 tid=57 Waiting
+  - waiting on <0x085e004c> (a java.lang.Object)
+  - locked <0x085e004c> (a java.lang.Object)
+
+"Picasso-Idle" prio=5 tid=58 Waiting
+  - waiting on <0x06afedaa> (a java.lang.Object)
+  - locked <0x06afedaa> (a java.lang.Object)
+
+"Picasso-Idle" prio=5 tid=59 Waiting
+  - waiting on <0x0ece2d9b> (a java.lang.Object)
+  - locked <0x0ece2d9b> (a java.lang.Object)
+
+"Thread-11" prio=5 tid=61 Waiting
+  - waiting on <0x0ff20911> (a java.lang.Object)
+  - locked <0x0ff20911> (a java.lang.Object)
+
+"Thread-10" prio=5 tid=62 Waiting
+  - waiting on <0x06580877> (a java.lang.Object)
+  - locked <0x06580877> (a java.lang.Object)
+
+"UpSeenThread-1" prio=5 tid=71 Waiting
+  - waiting on <0x0c5d254d> (a java.lang.Object)
+  - locked <0x0c5d254d> (a java.lang.Object)
+
+"mmsTaskExecutor-3" prio=5 tid=74 Waiting
+  - waiting on <0x033ab513> (a java.lang.Object)
+  - locked <0x033ab513> (a java.lang.Object)
+
+"UpSeenThread-2" prio=3 tid=76 Waiting
+  - waiting on <0x02dd1350> (a java.lang.Object)
+  - locked <0x02dd1350> (a java.lang.Object)
+
+"chatLogPrepareExecutor-1" prio=5 tid=49 Waiting
+  - waiting on <0x03e3c949> (a java.lang.Object)
+  - locked <0x03e3c949> (a java.lang.Object)
+
+"pool-10-thread-1" prio=5 tid=77 Waiting
+  - waiting on <0x06c7224e> (a java.lang.Object)
+  - locked <0x06c7224e> (a java.lang.Object)
+
+"WatermarkBatchJobThread-1" prio=4 tid=67 Waiting
+  - waiting on <0x05918f6f> (a java.lang.Object)
+  - locked <0x05918f6f> (a java.lang.Object)
+
+"PingThread-2" prio=5 tid=60 Waiting
+  - waiting on <0x0f16b105> (a java.lang.Object)
+  - locked <0x0f16b105> (a java.lang.Object)
+
+"locoEvent thread" prio=5 tid=24 Waiting
+  - waiting on <0x094830eb> (a java.lang.Object)
+  - locked <0x094830eb> (a java.lang.Object)
+
+"CarriageClient:com.kakao.talk.m.e.f.c$e" prio=5 tid=25 Waiting
+  - waiting on <0x03669e48> (a java.lang.Object)
+  - locked <0x03669e48> (a java.lang.Object)
+
+"recvHeaderTimer" prio=5 tid=26 Waiting
+  - waiting on <0x0a9b84e1> (a java.lang.Object)
+  - locked <0x0a9b84e1> (a java.lang.Object)
+
+"recvHeaderTimer" prio=5 tid=43 Waiting
+  - waiting on <0x0dba5206> (a java.lang.Object)
+  - locked <0x0dba5206> (a java.lang.Object)
+
+"recvHeaderTimer" prio=5 tid=50 Waiting
+  - waiting on <0x0e6b56f4> (a java.lang.Object)
+  - locked <0x0e6b56f4> (a java.lang.Object)
+
+"recvHeaderTimer" prio=5 tid=65 Waiting
+  - waiting on <0x0cea8e1d> (a java.lang.Object)
+  - locked <0x0cea8e1d> (a java.lang.Object)
+
+"WatermarkBatchJobThread-2" prio=4 tid=64 Waiting
+  - waiting on <0x01e7d263> (a java.lang.Object)
+  - locked <0x01e7d263> (a java.lang.Object)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=4 Waiting
+  - waiting on <0x09bf054c> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  - locked <0x09bf054c> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+
+"FinalizerDaemon" daemon prio=5 tid=5 Waiting
+  - waiting on <0x0eba9995> (a java.lang.Object)
+  - locked <0x0eba9995> (a java.lang.Object)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=6 Waiting
+  - waiting on <0x0e7cfaaa> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  - locked <0x0e7cfaaa> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+
+"HeapTaskDaemon" daemon prio=5 tid=7 Blocked
+  - waiting to lock an unknown object
+
+"OkHttp ConnectionPool" daemon prio=5 tid=17 TimedWaiting
+  - waiting on <0x0912b69b> (a com.android.okhttp.ConnectionPool)
+  - locked <0x0912b69b> (a com.android.okhttp.ConnectionPool)
+
+"Okio Watchdog" daemon prio=5 tid=19 Waiting
+  - waiting on <0x077d2a38> (a java.lang.Class<com.android.okhttp.okio.AsyncTimeout>)
+  - locked <0x077d2a38> (a java.lang.Class<com.android.okhttp.okio.AsyncTimeout>)
+
+"OkHttp ConnectionPool" daemon prio=5 tid=24 TimedWaiting
+  - waiting on <0x02783a11> (a com.android.okhttp.ConnectionPool)
+  - locked <0x02783a11> (a com.android.okhttp.ConnectionPool)
+
+FIM

@@ -9,11 +9,18 @@ from model.Process import Process
 def main():
 
     logReadText = read_log()
+
+
+
     threadStackData = AnalyzeThreadStack(logReadText)
 
-#   threadStackData.printThreads()
-    threadStackData.printResume()
+#    threadStackData.createThreadSummary()
+#    threadStackData.printThreadSummary()
+#    threadStackData.analyzeResources()
+#    threadStackData.pritThreadsProblem()
 
+
+    print("FIM")
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 def read_log():
 
@@ -25,11 +32,7 @@ def read_log():
     logReadText = file.read()
     file.close()
 
-
-    print("Leu Arquivo")
     return str(logReadText)
-
-
 
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++

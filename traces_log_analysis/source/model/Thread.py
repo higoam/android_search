@@ -42,13 +42,19 @@ class Thread:
         self.mutexex = ""           #
 
         #Others Line
-        self.threadActivities = ""  #
-        self.listWaiting = list()   #
-        self.listLocked = list()    #
-
+        self.threadActivities = ""              #
+        self.listWaitingTotal = list()          #
+        self.listLockedTotal = list()           #
+        self.listSleepingTotal = list()         #
+        self.listWaitingUnknownObject = list()  #
+        self.listDependente = list()
 
         self.gettingThreadInformation()
 
+
+
+    # -------------------------------------------------------------------------------
+    # Coletar dados do Cabecalho da Thread e popular atributos
     def gettingThreadInformation(self):
 
         getThreadActivities = False
@@ -93,6 +99,11 @@ class Thread:
             # Line 2 ---------------------------------------------------->
             if (line.find('sysTid=') != -1):
                 stringAUX = line
+
+                if (line.find('nice=') != -1):
+                    self.sysTid = stringAUX[line.find('sysTid=') +7: line.find('nice=')-1]
+                else:
+                    self.sysTid = stringAUX[line.find('sysTid=') +7:]
 
             #Line 3
             if (line.find('state=') != -1):

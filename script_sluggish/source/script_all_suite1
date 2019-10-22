@@ -1,0 +1,8 @@
+#!/bin/bash
+
+./main.py ../../benchmarks_dumpStates/bugreport_1/act_dumpstate.txt            
+./main.py ../../benchmarks_dumpStates/bugreport_1/dumpState_J410GUBU1ASE5_201905241059.log  
+./main.py ../../benchmarks_dumpStates/bugreport_1/dumpState_N950FXXU1AQI1_201709072125.log
+./main.py ../../benchmarks_dumpStates/bugreport_1/dumpState_1559075577206.log  
+./main.py ../../benchmarks_dumpStates/bugreport_1/dumpState_J610GUBU1ARIQ_201905221640.log  
+./main.py ../../benchmarks_dumpStates/bugreport_1/dumpState_N950FXXU1AQI1_201709072131.log

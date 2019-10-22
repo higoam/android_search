@@ -9,8 +9,6 @@ class BreakLog:
 
     def createListProcess(self, logRead):
 
-        print("TESTE3")
-
         processAUX = ""
         listProcessText = list()
         listProcess = list()
