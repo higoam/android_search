@@ -28,7 +28,7 @@ def read_log():
     strDump = sys.argv[1]
 
     # Open File Log
-    file = open(strDump,"rb")
+    file = open(strDump,"r")
     logReadText = file.read()
     file.close()
 
