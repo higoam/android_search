@@ -25,4 +25,3 @@ class LogSections:
         self.strTRACES = ""
 
         self.listEVENT_LOG = ""
-

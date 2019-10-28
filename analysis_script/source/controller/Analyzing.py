@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 import re
 from logging import exception
@@ -34,10 +36,11 @@ class Analyzing:
     # Compila todas as informacoes antes de exibir as mensagens
     # ------------------------------------------------------------------------|
     def createReport(self, segmented_log):
-
+        print("Test")
         self.header(segmented_log)
         self.memory(segmented_log)
         self.cpu(segmented_log)
+
         print(self.report)
 
 #        self.traces(segmented_log)

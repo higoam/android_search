@@ -1,5 +1,5 @@
-#!/usr/bin/python3
-#coding: utf-8
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 import sys
 
@@ -9,23 +9,21 @@ from controller.Analyzing import Analyzing
 
 def main():
 
-#    analyzingObj = Analyzing()
-
     # Ler arquivo                                                                                   
     # ------------------------------------------------------------------------|
-    pathDump = sys.argv[1]
-    file = open(pathDump,'r+b')
-    dumpstate = file.read()
-    file.close()
-
-
-
-    dumpstateStr = str(dumpstate)
-
+    logReadText = read_log()
 
     # Segment every parts of the log
     # ------------------------------------------------------------------------|
-    brokenLog = BreakLog(dumpstateStr)
+    brokenLog = BreakLog(logReadText)
+
+
+    # Analyze Parts
+    # ------------------------------------------------------------------------|
+#    analyzingDump = Analyzing()
+#    analyzingDump.createReport()
+
+#    print(brokenLog.logSections.strCPU_INFO)
 
     # Verifica BugReport e faz análise
     # ------------------------------------------------------------------------|
@@ -36,8 +34,22 @@ def main():
 #    else:
 #        print("BUGREPORT VERSION NOT KNOWN")
 
+#    analyzingObj = Analyzing()
 
 
+def read_log():
+
+    # Get Parameter
+    strDump = sys.argv[1]
+
+    # Open File Log
+    file = open(strDump,"rb")
+    logReadText = file.read()
+    file.close()
+
+    logReadText = logReadText.decode('utf-8',errors='ignore')
+
+    return (logReadText)
 
 # ------------------------------------------------------------------------|
 main()

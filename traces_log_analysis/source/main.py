@@ -32,8 +32,7 @@ def read_log():
     logReadText = file.read()
     file.close()
 
-    return str(logReadText)
-
+    return logReadText
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 main()

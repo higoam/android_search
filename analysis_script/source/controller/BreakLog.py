@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 from model.LogSections import LogSections
 
@@ -8,7 +10,7 @@ class BreakLog:
 # ------------------------------------------------------------------------|
     def __init__(self, dump):
 
-        self.dumpstate = dump.splitlines()
+        self.dumpstate = dump
         self.logSections = LogSections()
 
         self.segmentImportantSections()
@@ -84,14 +86,16 @@ class BreakLog:
 
 #        return 0
 
-        for line in self.dumpstate:
-
-            print(line)
+##        for line in self.dumpstate.splitlines():
+#            print(line)
 
 
         # Segment Sections
         # ----------------------------------------------------------------|
         for line in self.dumpstate.splitlines():
+
+            print("AAA")
+
 
             # TAGs to enable copy text
             # ----------------------------------------------------------------|
@@ -124,10 +128,10 @@ class BreakLog:
                 copy_condition_DUMPSYS_MEMINFO = 2
 
 
-            if (line.find('LAST 3 HOURS:') != -1):
-                copy_condition_PROCSTATS = 1
-            elif line.find('Run time Stats:') != -1 and (copy_condition_PROCSTATS == 1):
-                copy_condition_PROCSTATS = 2
+            #if (line.find('LAST 3 HOURS:') != -1):
+            #    copy_condition_PROCSTATS = 1
+            #elif line.find('Run time Stats:') != -1 and (copy_condition_PROCSTATS == 1):
+            #    copy_condition_PROCSTATS = 2
 
 
             if (line.find('DUMP OF SERVICE CRITICAL cpuinfo') != -1):
@@ -158,29 +162,29 @@ class BreakLog:
             # Confirmation to copy line to section
             # ----------------------------------------------------------------|
             if copy_condition_SYSTEM_LOG == 1:
-               STR_SYSTEM_LOG_AUX = STR_SYSTEM_LOG_AUX + line
+               STR_SYSTEM_LOG_AUX = STR_SYSTEM_LOG_AUX + line + "\n"
             if copy_condition_EVENT_LOG == 1:
-               STR_EVENT_LOG_AUX = STR_EVENT_LOG_AUX + line
+               STR_EVENT_LOG_AUX = STR_EVENT_LOG_AUX + line + "\n"
             if copy_condition_SYSTEM_PROPERTIES == 1:
-               STR_SYSTEM_PROPERTIES = STR_SYSTEM_PROPERTIES + line
+               STR_SYSTEM_PROPERTIES = STR_SYSTEM_PROPERTIES + line + "\n"
 
             if copy_condition_MEMORY_INFO == 1:
-               STR_MEMORY_INFO = STR_MEMORY_INFO + line
+               STR_MEMORY_INFO = STR_MEMORY_INFO + line + "\n"
             if copy_condition_DUMPSYS_MEMINFO == 1:
-               STR_DUMPSYS_MEMINFO = STR_DUMPSYS_MEMINFO + line
-            if copy_condition_PROCSTATS == 1:
-               STR_DUMPSYS_PROCSTATS = STR_DUMPSYS_PROCSTATS + line
+               STR_DUMPSYS_MEMINFO = STR_DUMPSYS_MEMINFO + line + "\n"
+            #if copy_condition_PROCSTATS == 1:
+            #   STR_DUMPSYS_PROCSTATS = STR_DUMPSYS_PROCSTATS + line
 
             if copy_condition_CPU_INFO == 1:
-               STR_CPU_INFO_AUX = STR_CPU_INFO_AUX + line
+               STR_CPU_INFO_AUX = STR_CPU_INFO_AUX + line + "\n"
             if copy_condition_CPU_INFO_2 == 1:
-               STR_CPU_INFO_2 = STR_CPU_INFO_2 + line
+               STR_CPU_INFO_2 = STR_CPU_INFO_2 + line + "\n"
 
             if copy_condition_TRACES == 1:
-               STR_TRACES = STR_TRACES + line
+               STR_TRACES = STR_TRACES + line + "\n"
 
             if copy_condition_PROCESSES_AND_THREADS == 1:
-                STR_PROCESSES_AND_THREADS_AUX = STR_PROCESSES_AND_THREADS_AUX + line
+                STR_PROCESSES_AND_THREADS_AUX = STR_PROCESSES_AND_THREADS_AUX + line + "\n"
 
 
 
@@ -219,9 +223,6 @@ class BreakLog:
     def print_HEADER_LOG(self):
 
         print(self.logSections.strHEADER_LOG)
-
-
-
 
 
 # ------------------------------------------------------------------------|
@@ -387,8 +388,8 @@ class BreakLog:
         return log_segmenting
 
 
-
-
+#    def getLogSections(self):
+#        return self.logSections
 
 
 
