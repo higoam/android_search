@@ -10,7 +10,7 @@ class BreakLog:
 # ------------------------------------------------------------------------|
     def __init__(self, dump):
 
-        self.dumpstate = dump
+        self.dumpstate = dump.splitlines()
         self.logSections = LogSections()
 
         self.segmentImportantSections()
@@ -46,6 +46,8 @@ class BreakLog:
 
         STR_EVENT_LOG_AUX = ""
         STR_SYSTEM_LOG_AUX = ""
+
+
         STR_SYSTEM_PROPERTIES = ""
         STR_PROCESSES_AND_THREADS_AUX = ""
 
@@ -85,17 +87,15 @@ class BreakLog:
 
 
 #        return 0
-
-##        for line in self.dumpstate.splitlines():
+#        for line in self.dumpstate:
 #            print(line)
 
 
         # Segment Sections
         # ----------------------------------------------------------------|
-        for line in self.dumpstate.splitlines():
+        for line in self.dumpstate:
 
-            print("AAA")
-
+#            print(line)
 
             # TAGs to enable copy text
             # ----------------------------------------------------------------|
@@ -110,22 +110,22 @@ class BreakLog:
                 copy_condition_EVENT_LOG = 2
 
 
-            if (line.find('------ SYSTEM PROPERTIES') != -1):
-                copy_condition_SYSTEM_PROPERTIES = 1
-            elif line.find('was the duration of \'SYSTEM PROPERTIES\'') != -1 and (copy_condition_SYSTEM_PROPERTIES == 1):
-                copy_condition_SYSTEM_PROPERTIES = 2
+#            if (line.find('------ SYSTEM PROPERTIES') != -1):
+#                copy_condition_SYSTEM_PROPERTIES = 1
+#            elif line.find('was the duration of \'SYSTEM PROPERTIES\'') != -1 and (copy_condition_SYSTEM_PROPERTIES == 1):
+#                copy_condition_SYSTEM_PROPERTIES = 2
 
 
-            if (line.find('------ MEMORY INFO (/proc/meminfo)') != -1):
-                copy_condition_MEMORY_INFO = 1
-            elif line.find('was the duration of \'MEMORY INFO\'') != -1 and (copy_condition_MEMORY_INFO == 1):
-                copy_condition_MEMORY_INFO = 2
+#            if (line.find('------ MEMORY INFO (/proc/meminfo)') != -1):
+#                copy_condition_MEMORY_INFO = 1
+#            elif line.find('was the duration of \'MEMORY INFO\'') != -1 and (copy_condition_MEMORY_INFO == 1):
+#                copy_condition_MEMORY_INFO = 2
 
 
-            if (line.find('Total  (   PSS   SwapPss ) kB') != -1) or (line.find('DUMP OF SERVICE HIGH meminfo:') != -1):
-                copy_condition_DUMPSYS_MEMINFO = 1
-            elif line.find('Tuning:') != -1 and (copy_condition_DUMPSYS_MEMINFO == 1):
-                copy_condition_DUMPSYS_MEMINFO = 2
+#            if (line.find('Total  (   PSS   SwapPss ) kB') != -1) or (line.find('DUMP OF SERVICE HIGH meminfo:') != -1):
+#                copy_condition_DUMPSYS_MEMINFO = 1
+#            elif line.find('Tuning:') != -1 and (copy_condition_DUMPSYS_MEMINFO == 1):
+#                copy_condition_DUMPSYS_MEMINFO = 2
 
 
             #if (line.find('LAST 3 HOURS:') != -1):
@@ -134,82 +134,85 @@ class BreakLog:
             #    copy_condition_PROCSTATS = 2
 
 
-            if (line.find('DUMP OF SERVICE CRITICAL cpuinfo') != -1):
-                copy_condition_CPU_INFO = 1
-            elif line.find('was the duration of dumpsys cpuinfo') != -1 and (copy_condition_CPU_INFO == 1):
-                copy_condition_CPU_INFO = 2
+#            if (line.find('DUMP OF SERVICE CRITICAL cpuinfo') != -1):
+#                copy_condition_CPU_INFO = 1
+#            elif line.find('was the duration of dumpsys cpuinfo') != -1 and (copy_condition_CPU_INFO == 1):
+#                copy_condition_CPU_INFO = 2
 
 
-            if (line.find('------ CPU INFO') != -1):
-                copy_condition_CPU_INFO_2 = 1
-            elif line.find('was the duration of \'CPU INFO\'') != -1 and (copy_condition_CPU_INFO_2 == 1):
-                copy_condition_CPU_INFO_2 = 2
+#            if (line.find('------ CPU INFO') != -1):
+#                copy_condition_CPU_INFO_2 = 1
+#            elif line.find('was the duration of \'CPU INFO\'') != -1 and (copy_condition_CPU_INFO_2 == 1):
+#                copy_condition_CPU_INFO_2 = 2
 
 
-            if (line.find('------ PROCESSES AND THREADS') != -1):
-                copy_condition_PROCESSES_AND_THREADS = 1
-            elif line.find('was the duration of \'PROCESSES AND THREADS') != -1 and (copy_condition_PROCESSES_AND_THREADS == 1):
-                copy_condition_PROCESSES_AND_THREADS = 2
+ #           if (line.find('------ PROCESSES AND THREADS') != -1):
+#                copy_condition_PROCESSES_AND_THREADS = 1
+#            elif line.find('was the duration of \'PROCESSES AND THREADS') != -1 and (copy_condition_PROCESSES_AND_THREADS == 1):
+#                copy_condition_PROCESSES_AND_THREADS = 2
 
 
-            if (line.find('------ VM TRACES JUST NOW') != -1):
-                copy_condition_TRACES = 1
-            elif line.find('was the duration of \'VM TRACES JUST NOW\'') != -1 and (copy_condition_TRACES == 1):
-                copy_condition_TRACES = 2
+#            if (line.find('------ VM TRACES JUST NOW') != -1):
+#                copy_condition_TRACES = 1
+#            elif line.find('was the duration of \'VM TRACES JUST NOW\'') != -1 and (copy_condition_TRACES == 1):
+#                copy_condition_TRACES = 2
 
 
 
             # Confirmation to copy line to section
             # ----------------------------------------------------------------|
             if copy_condition_SYSTEM_LOG == 1:
-               STR_SYSTEM_LOG_AUX = STR_SYSTEM_LOG_AUX + line + "\n"
+               STR_SYSTEM_LOG_AUX = STR_SYSTEM_LOG_AUX + line  + "\n"
             if copy_condition_EVENT_LOG == 1:
                STR_EVENT_LOG_AUX = STR_EVENT_LOG_AUX + line + "\n"
-            if copy_condition_SYSTEM_PROPERTIES == 1:
-               STR_SYSTEM_PROPERTIES = STR_SYSTEM_PROPERTIES + line + "\n"
+#            if copy_condition_SYSTEM_PROPERTIES == 1:
+#               STR_SYSTEM_PROPERTIES = STR_SYSTEM_PROPERTIES + line + "\n"
 
-            if copy_condition_MEMORY_INFO == 1:
-               STR_MEMORY_INFO = STR_MEMORY_INFO + line + "\n"
-            if copy_condition_DUMPSYS_MEMINFO == 1:
-               STR_DUMPSYS_MEMINFO = STR_DUMPSYS_MEMINFO + line + "\n"
+#            if copy_condition_MEMORY_INFO == 1:
+#               STR_MEMORY_INFO = STR_MEMORY_INFO + line + "\n"
+#            if copy_condition_DUMPSYS_MEMINFO == 1:
+#               STR_DUMPSYS_MEMINFO = STR_DUMPSYS_MEMINFO + line + "\n"
             #if copy_condition_PROCSTATS == 1:
             #   STR_DUMPSYS_PROCSTATS = STR_DUMPSYS_PROCSTATS + line
 
-            if copy_condition_CPU_INFO == 1:
-               STR_CPU_INFO_AUX = STR_CPU_INFO_AUX + line + "\n"
-            if copy_condition_CPU_INFO_2 == 1:
-               STR_CPU_INFO_2 = STR_CPU_INFO_2 + line + "\n"
+#            if copy_condition_CPU_INFO == 1:
+#               STR_CPU_INFO_AUX = STR_CPU_INFO_AUX + line + "\n"
+#            if copy_condition_CPU_INFO_2 == 1:
+#               STR_CPU_INFO_2 = STR_CPU_INFO_2 + line + "\n"
 
-            if copy_condition_TRACES == 1:
-               STR_TRACES = STR_TRACES + line + "\n"
+#            if copy_condition_TRACES == 1:
+#               STR_TRACES = STR_TRACES + line + "\n"
 
-            if copy_condition_PROCESSES_AND_THREADS == 1:
-                STR_PROCESSES_AND_THREADS_AUX = STR_PROCESSES_AND_THREADS_AUX + line + "\n"
-
-
-
-
-        logSectionsAUX.strHEADER_LOG = STR_HEADER_LOG_AUX
-        print(logSectionsAUX.strMEMORY_INFO)
-
-
-        logSectionsAUX.strEVENT_LOG = STR_EVENT_LOG_AUX
-        logSectionsAUX.strSYSTEM_LOG = STR_SYSTEM_LOG_AUX
-
-        logSectionsAUX.strPPOCESSES_AND_THREADS = STR_PROCESSES_AND_THREADS_AUX
-
-        logSectionsAUX.strSYSTEM_PROPERTIES = STR_SYSTEM_PROPERTIES
-
-        logSectionsAUX.strMEMORY_INFO = STR_MEMORY_INFO
-        logSectionsAUX.strDUMPSYS_MEMINFO = STR_DUMPSYS_MEMINFO
-        logSectionsAUX.strDUMPSYS_PROCSTATS = STR_DUMPSYS_PROCSTATS
+#            if copy_condition_PROCESSES_AND_THREADS == 1:
+#                STR_PROCESSES_AND_THREADS_AUX = STR_PROCESSES_AND_THREADS_AUX + line + "\n"
 
 
 
-        logSectionsAUX.strCPU_INFO = STR_CPU_INFO_AUX
-        logSectionsAUX.strCPU_INFO_2 = STR_CPU_INFO_2
 
-        logSectionsAUX.strTRACES = STR_TRACES
+#        logSectionsAUX.strHEADER_LOG = STR_HEADER_LOG_AUX
+
+     #  # logSectionsAUX.strEVENT_LOG = STR_EVENT_LOG_AUX
+     #   logSectionsAUX.strSYSTEM_LOG = STR_SYSTEM_LOG_AUX
+
+
+#        for line in STR_EVENT_LOG_AUX.splitlines():
+#            print(line)
+
+
+#        logSectionsAUX.strPPOCESSES_AND_THREADS = STR_PROCESSES_AND_THREADS_AUX
+
+#        logSectionsAUX.strSYSTEM_PROPERTIES = STR_SYSTEM_PROPERTIES
+
+#        logSectionsAUX.strMEMORY_INFO = STR_MEMORY_INFO
+#        logSectionsAUX.strDUMPSYS_MEMINFO = STR_DUMPSYS_MEMINFO
+#        logSectionsAUX.strDUMPSYS_PROCSTATS = STR_DUMPSYS_PROCSTATS
+
+
+
+#        logSectionsAUX.strCPU_INFO = STR_CPU_INFO_AUX
+#        logSectionsAUX.strCPU_INFO_2 = STR_CPU_INFO_2
+
+#        logSectionsAUX.strTRACES = STR_TRACES
 
         self.logSections = logSectionsAUX
 

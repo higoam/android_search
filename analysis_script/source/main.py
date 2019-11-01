@@ -3,7 +3,7 @@
 
 import sys
 
-from controller.BreakLog import BreakLog
+from controller.BreakLog2 import BreakLog2
 from model.LogSections import LogSections
 from controller.Analyzing import Analyzing
 
@@ -15,7 +15,7 @@ def main():
 
     # Segment every parts of the log
     # ------------------------------------------------------------------------|
-    brokenLog = BreakLog(logReadText)
+    brokenLog = BreakLog2(logReadText)
 
 
     # Analyze Parts
@@ -49,7 +49,7 @@ def read_log():
 
     logReadText = logReadText.decode('utf-8',errors='ignore')
 
-    return (logReadText)
+    return str(logReadText)
 
 # ------------------------------------------------------------------------|
 main()
